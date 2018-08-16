@@ -16,5 +16,6 @@ setup(
     author='Romain Fontugne',
     url='https://github.com/romain-fontugne/rftb',
     license=license,
+    packages=find_packages(exclude=('tests', 'docs'))
 )
 
