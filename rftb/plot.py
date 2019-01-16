@@ -12,7 +12,8 @@ def ecdf(a, ax=None, **kwargs):
     Returns a dictionary providing the CDF value for each point on the x axis.
     """
     sorted=np.sort( a )
-    yvals=np.arange(len(sorted))/float(len(sorted))
+    yvals=np.arange(len(sorted)+1)/float(len(sorted))
+    sorted = np.append( sorted[0], sorted )
     if ax is None:
         plt.plot( sorted, yvals, **kwargs )
     else:
