@@ -16,7 +16,7 @@ def ecdf(a, ax=None, add_zero=True, **kwargs):
     yvals=np.arange(len(sorted)+1)/float(len(sorted))
     if add_zero:
         starti = 0
-        sorted = np.append( sorted[0], sorted) )
+        sorted = np.append( sorted[0], sorted )
     else:
         starti=1
     if ax is None:
